@@ -1,10 +1,5 @@
 import React from "react";
-import {
-  Instagram,
-  Facebook,
-  Youtube,
-  Twitter,
-} from "lucide-react";
+import { Instagram, Facebook, Youtube, Twitter } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -23,17 +18,21 @@ const Footer = () => {
 
         {/* Right Column */}
         <div className="space-y-4 text-sm md:text-base text-right md:text-left">
-          <p className="font-semibold">Brooklyn, New York</p>
-          <p>962 Fifth Avenue Str, 3rd Floor-Trump Building NY 10006, United State.</p>
+          <p className="font-semibold">Yavatmal | Amravati | Nagpur</p>
 
-          <p>Email us at</p>
+          <p>CREATE | UPDATE | RENOVATE</p>
+
+          <p className="font-semibold">Architect: @ajmirevicky</p>
+          <p>Architecture | Interior</p>
+
+          <p className="font-semibold">Email us at</p>
           <p className="text-orange-600 font-medium hover:underline cursor-pointer">
-            hello@landify.design
+            ajmirevicky@gmail.com
           </p>
 
-          <p>If you're in a hurry, quick call for us</p>
+          <p className="font-semibold">Quick Call</p>
           <p className="text-orange-600 font-semibold text-lg hover:underline cursor-pointer">
-            +8(663)125–08–59
+            +91 9860508101
           </p>
         </div>
       </div>
@@ -44,7 +43,7 @@ const Footer = () => {
       <div className="mt-8 flex flex-col md:flex-row items-center justify-between gap-4">
         {/* Left text */}
         <p className="text-sm text-gray-500">
-          © 2025 Ajmire – Award winning studio. Made with love by Ajmire Team
+          © 2025 Ajmire Architects. Made with ❤️ by SNC
         </p>
 
         {/* Right social icons */}

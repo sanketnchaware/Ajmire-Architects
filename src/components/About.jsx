@@ -23,7 +23,7 @@ const About = () => (
     <div className="flex flex-col lg:flex-row gap-12 items-center">
       {/* Text Content */}
       <div className="space-y-6 max-w-xl">
-        <p className="text-sm text-gray-500 tracking-widest font-medium">
+        <p className="text-sm font-medium tracking-widest text-primary uppercase mb-3">
           ABOUT US
         </p>
         <h1 className="text-4xl md:text-5xl font-serif font-semibold mt-2 leading-tight">
@@ -43,14 +43,14 @@ const About = () => (
 
       {/* Awards */}
       <div className="flex gap-6 w-full lg:w-1/2">
-        <figure className="w-1/2 rounded-xl overflow-hidden shadow-lg -translate-y-6">
+        <figure className="w-1/2 rounded-xl overflow-hidden shadow-lg lg:-translate-y-6">
           <img
             className="object-cover w-full h-full"
             src="https://images.unsplash.com/photo-1502005097973-6a7082348e28?w=600&auto=format&fit=crop&q=60"
             alt="Modern interior design award"
           />
         </figure>
-        <figure className="w-1/2 rounded-xl overflow-hidden shadow-lg translate-y-6">
+        <figure className="w-1/2 rounded-xl overflow-hidden shadow-lg lg:translate-y-6">
           <img
             className="object-cover w-full h-full"
             src="https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?w=600&auto=format&fit=crop&q=60"

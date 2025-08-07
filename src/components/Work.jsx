@@ -24,7 +24,7 @@ export default function Work() {
     <section className="w-11/12 max-w-7xl mx-auto py-20">
       {/* Heading */}
       <div className="mb-16 ">
-        <p className="text-yellow-600 uppercase tracking-wide text-sm font-medium">
+        <p className=" text-sm font-medium tracking-widest text-primary uppercase mb-3">
           Recent Works
         </p>
         <h2 className="text-4xl md:text-5xl font-serif font-semibold mt-2 leading-tight">
