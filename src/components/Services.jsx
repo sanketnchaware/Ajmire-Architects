@@ -20,7 +20,7 @@ const features = [
 ];
 
 const Services = () => (
-  <section className="w-11/12 max-w-7xl mx-auto py-24">
+  <section id="services" className="w-11/12 max-w-7xl mx-auto py-24">
     {/* Header */}
     <div className="mb-16 ">
       <p className="text-sm font-medium tracking-widest text-primary uppercase mb-3">

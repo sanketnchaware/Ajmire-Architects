@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const awards = [
@@ -25,7 +26,10 @@ const awards = [
 
 const Hero = () => {
   return (
-    <section className="min-h-screen lg:mt-0 mt-20 w-full pt-10 lg:pt-36 bg-white">
+    <section
+      id="hero"
+      className=" lg:mt-0 pt-20 w-full pt-10 lg:pt-36 bg-white"
+    >
       {/* Text Section */}
       <div className="flex pb-16 items-center justify-center text-center px-4">
         <div className="space-y-6 max-w-3xl">
@@ -43,12 +47,16 @@ const Hero = () => {
 
       {/* Hero Image with CTA Button */}
       <div className="w-full  relative">
-        <img
+        <Image
+          height={100}
+          width={100}
           src="/images/CTA Button.webp"
-          className="hidden lg:absolute left-[10%] top-[-10%] z-10"
+          className="lg:block hidden absolute left-[10%] top-[-10%] z-10"
           alt="CTA Button"
         />
-        <img
+        <Image
+          height={400}
+          width={1000}
           className="w-full h-full object-cover"
           src="/images/hero-image.webp"
           alt="hero-image"
@@ -56,15 +64,15 @@ const Hero = () => {
       </div>
 
       {/* Awards Section */}
-      <div className="bg-darkGray flex flex-wrap justify-center gap-10 px-6 py-12">
-        {/* Vertical Text */}
+      {/* <div className="bg-darkGray flex flex-wrap justify-center gap-10 px-6 py-12">
+
         <div className="flex items-center">
           <p className="text-white text-xl font-medium tracking-widest lg:rotate-180 lg:writing-vertical">
             AWARDS
           </p>
         </div>
 
-        {/* Awards Grid */}
+     
         <div className="flex flex-wrap lg:justify-center gap-10">
           {awards.map(({ image, title, year }) => (
             <div
@@ -83,7 +91,7 @@ const Hero = () => {
             </div>
           ))}
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };

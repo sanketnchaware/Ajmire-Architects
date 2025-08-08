@@ -5,8 +5,10 @@ import Work from "@/components/Work";
 import Image from "next/image";
 
 export default function Home() {
+
+
   return (
-    <div className="">
+    <div className="divide-y divide-gray-200 dark:divide-gray-700">
       <Hero />
       <About />
       <Services />

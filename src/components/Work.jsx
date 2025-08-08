@@ -21,7 +21,7 @@ const projects = [
 
 export default function Work() {
   return (
-    <section className="w-11/12 max-w-7xl mx-auto py-20">
+    <section id="work" className="w-11/12 max-w-7xl mx-auto py-20">
       {/* Heading */}
       <div className="mb-16 ">
         <p className=" text-sm font-medium tracking-widest text-primary uppercase mb-3">

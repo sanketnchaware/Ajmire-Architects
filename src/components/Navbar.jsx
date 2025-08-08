@@ -7,7 +7,7 @@ import { Menu, X } from "lucide-react"; // Hamburger icons
 const navItems = {
   about: "About",
   services: "Services",
-  "our-work": "Our Work",
+  work: "Our Work",
 };
 
 const Navbar = () => {
@@ -16,28 +16,36 @@ const Navbar = () => {
   const toggleMenu = () => setIsOpen(!isOpen);
   const closeMenu = () => setIsOpen(false);
 
+  const handleScroll = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+    closeMenu();
+  };
+
   return (
     <header className="fixed top-0 left-0 z-50 w-full bg-darkGray shadow-md px-6 py-4">
       <nav className="flex items-center justify-between">
         {/* Logo */}
-        <Link
-          href="/"
-          className="text-white text-xl font-bold tracking-wide hover:opacity-90 transition"
+        <button
+          onClick={() => handleScroll("hero")}
+          className=" cursor-pointer text-white text-xl font-bold tracking-wide hover:opacity-90 transition"
         >
           AJMIRE <span className="text-gray-400">ARCHITECTS</span>
-        </Link>
+        </button>
 
         {/* Desktop Nav */}
         <div className="hidden sm:flex items-center gap-8 text-sm font-medium">
           {Object.entries(navItems).map(([key, label]) => (
-            <Link
+            <button
               key={key}
-              href={`/${key}`}
-              className="text-white relative group transition duration-300"
+              onClick={() => handleScroll(key)}
+              className=" cursor-pointer text-white relative group transition duration-300"
             >
               <span className="group-hover:text-gray-300">{label}</span>
               <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full" />
-            </Link>
+            </button>
           ))}
         </div>
 
@@ -58,14 +66,13 @@ const Navbar = () => {
       >
         <div className="flex flex-col p-6 space-y-6">
           {Object.entries(navItems).map(([key, label]) => (
-            <Link
+            <button
               key={key}
-              href={`/${key}`}
-              onClick={closeMenu}
+              onClick={() => handleScroll(key)}
               className="text-base font-medium hover:text-gray-300 transition"
             >
               {label}
-            </Link>
+            </button>
           ))}
         </div>
       </div>

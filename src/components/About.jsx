@@ -19,7 +19,7 @@ const stats = [
 ];
 
 const About = () => (
-  <section className="min-h-screen w-11/12 max-w-7xl mx-auto py-20">
+  <section id="about" className="min-h-screen w-11/12 max-w-7xl mx-auto py-20">
     <div className="flex flex-col lg:flex-row gap-12 items-center">
       {/* Text Content */}
       <div className="space-y-6 max-w-xl">
