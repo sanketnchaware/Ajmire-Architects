@@ -3,7 +3,7 @@ import { Instagram, Facebook, Youtube, Twitter } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="w-10/12 m-auto bg-white text-black  py-16">
+    <footer id="contact" className="w-10/12 m-auto bg-white text-black  py-16">
       {/* Top CTA section */}
       <div className="grid md:grid-cols-2 gap-12 mb-16">
         {/* Left Column */}

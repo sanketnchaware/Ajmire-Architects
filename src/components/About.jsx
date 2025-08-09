@@ -7,14 +7,14 @@ const stats = [
     title2: "Clients",
   },
   {
-    value: "250",
-    title1: "Employees",
-    title2: "Worldwide",
+    value: "5+",
+    title1: "Years",
+    title2: "Experience",
   },
   {
-    value: "3469",
-    title1: "Projects Completed",
-    title2: "in 60 Countries",
+    value: "25+",
+    title1: "Projects ",
+    title2: "Completed",
   },
 ];
 

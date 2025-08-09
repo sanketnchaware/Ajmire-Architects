@@ -8,6 +8,7 @@ const navItems = {
   about: "About",
   services: "Services",
   work: "Our Work",
+  contact: "Contact Us",
 };
 
 const Navbar = () => {
@@ -28,12 +29,14 @@ const Navbar = () => {
     <header className="fixed top-0 left-0 z-50 w-full bg-darkGray shadow-md px-6 py-4">
       <nav className="flex items-center justify-between">
         {/* Logo */}
-        <button
-          onClick={() => handleScroll("hero")}
-          className=" cursor-pointer text-white text-xl font-bold tracking-wide hover:opacity-90 transition"
-        >
-          AJMIRE <span className="text-gray-400">ARCHITECTS</span>
-        </button>
+        <h1>
+          <button
+            onClick={() => handleScroll("hero")}
+            className=" cursor-pointer text-white text-xl font-bold tracking-wide hover:opacity-90 transition"
+          >
+            AJMIRE <span className="text-gray-400">ARCHITECTS</span>
+          </button>
+        </h1>
 
         {/* Desktop Nav */}
         <div className="hidden sm:flex items-center gap-8 text-sm font-medium">

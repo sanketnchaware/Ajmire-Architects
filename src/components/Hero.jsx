@@ -32,9 +32,9 @@ const Hero = () => {
     >
       {/* Text Section */}
       <div className="flex pb-16 items-center justify-center text-center px-4">
-        <div className="space-y-6 max-w-3xl">
+        <div className="space-y-6 max-w-5xl">
           <h1 className="text-4xl md:text-5xl font-serif font-semibold mt-2 leading-tight">
-            Make your home an ode to joy
+            Make <span className="italic">your home</span> an ode to joy
           </h1>
           <p className="text-base  text-gray-600 leading-relaxed">
             We turn your empty house into a lovely home, making compact spaces
