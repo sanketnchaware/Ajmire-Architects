@@ -4,7 +4,13 @@ import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 
 import { Playfair_Display, Montserrat } from "next/font/google";
+import { Orbitron } from "next/font/google";
 
+const orbitron = Orbitron({
+  subsets: ["latin"],
+  weight: ["500", "700"],
+  variable: "--font-orbitron",
+});
 // Load fonts
 const playfair = Playfair_Display({
   subsets: ["latin"],
@@ -27,7 +33,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={` ${playfair.variable} ${montserrat.variable} antialiased`}
+        className={` ${orbitron.variable} ${playfair.variable} ${montserrat.variable} antialiased`}
       >
         <Navbar />
 

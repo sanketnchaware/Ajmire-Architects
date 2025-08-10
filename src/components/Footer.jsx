@@ -40,14 +40,28 @@ const Footer = () => {
       <hr className="border-gray-300" />
 
       {/* Bottom bar */}
-      <div className="mt-8 flex flex-col md:flex-row items-center justify-between gap-4">
+      <div className="mt-8 grid grid-cols-1 md:grid-cols-3 items-center gap-4">
         {/* Left text */}
-        <p className="text-sm text-gray-500">
-          © 2025 Ajmire Architects. Made with ❤️ by SNC
+        <div className="text-sm text-gray-500 flex flex-col md:flex-row items-center justify-center md:justify-start gap-2">
+          <p>© 2025 Ajmire Architects.</p>
+        </div>
+
+        {/* Center spacing (optional empty column for balance) */}
+        <p className=" justify-center flex items-center gap-2">
+          Made with ❤️ by{" "}
+          <span
+            className="font-[var(--font-orbitron)] text-xl font-bold 
+                   bg-gradient-to-r from-black via-gray-400 to-[#FFD700] 
+                   bg-clip-text text-transparent 
+                   drop-shadow-[0_4px_24px_rgba(255,215,0,0.5)] 
+                   tracking-widest"
+          >
+            SNC
+          </span>
         </p>
 
         {/* Right social icons */}
-        <div className="flex items-center gap-6">
+        <div className="flex items-center justify-center md:justify-end gap-6">
           <span className="uppercase text-xs tracking-widest text-gray-500">
             Connect
           </span>
